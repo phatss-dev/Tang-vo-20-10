@@ -2565,7 +2565,6 @@ img["onerror"] = () => {
       o["font"] = "bold 48px Arial, sans-serif";
       o["textAlign"] = "center";
       o["textBaseline"] = "middle";
-      const s = "Hệ thống đang cập nhật";
       const r = 0.8 * e["width"];
       const i = e["height"] / 2 - 30;
       !(function (e, o, a, s, r, n) {
@@ -2674,4 +2673,5 @@ controls["addEventListener"]("change", () => {
     userHasMovedCamera = true;
   }
 });
+
 
