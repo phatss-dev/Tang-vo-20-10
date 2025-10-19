@@ -13,7 +13,11 @@
     href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
 </head>
+<body style="margin:0; overflow:hidden;">
 
+  <!-- Nhạc nền -->
+  <audio id="bg-music" src="./music.mp3" preload="auto" loop></audio>
+  
 <body>
   <script type="importmap">
     {
@@ -24,6 +28,17 @@
     }
     </script>
   <script src="./assets/index.main.js?v=202406"></script>
+  <!-- Script kích hoạt nhạc khi người dùng click -->
+  <script>
+    const bgMusic = document.getElementById("bg-music");
+
+    // Khi người dùng click lần đầu → phát nhạc
+    const startMusic = () => {
+      bgMusic.play().catch(err => console.log("Không thể phát nhạc tự động:", err));
+      document.removeEventListener("click", startMusic);
+    };
+
+    document.addEventListener("click", startMusic);
   </script>
 </body>
 
