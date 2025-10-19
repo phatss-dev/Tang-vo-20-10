@@ -7,7 +7,7 @@ import { makeMat } from "./mins.js";
 if (!window["Heartlove"]) {
   window.Heartlove = {
     data: {
-      messages: ["Anh yêu em", "mãi yêu em", "Thật sự yêu em rất nhiều đó"],
+      messages: ["Anh yêu vợ", "mãi yêu vợ", "Thật sự yêu vợ rất nhiều đó", "Chúc vợ 20/10 thật xinh đẹp, hạnh phúc và luôn được yêu như hôm nay", "Vợ là điều tuyệt vời nhất"],
       images: [],
       heartColor: "#ff9090",
     },
@@ -2673,5 +2673,6 @@ controls["addEventListener"]("change", () => {
     userHasMovedCamera = true;
   }
 });
+
 
 
